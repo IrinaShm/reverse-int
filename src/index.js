@@ -3,3 +3,5 @@ module.exports = function reverse(n) {
     let result = Number(str.split('').reverse().join(''));
     console.log(result);
 }
+
+reverse(261);
