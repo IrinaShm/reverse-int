@@ -1,7 +1,9 @@
 module.exports = function reverse(n) {
     let str = n.toString();
-    let result = Number(str.split('').reverse().join(''));
-    console.log(result);
-}
 
-reverse(261);
+    if (n < 0) {
+        return Number(str.split('').slice(1).reverse().join(''));
+    }
+
+    return Number(str.split('').reverse().join(''));
+}
